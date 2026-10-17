@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-Hant"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>冰島 5 天行程 Iceland 5-Day Itinerary</title>
+<style>
+:root{--bg:#f3f6f7;--tx:#14222b;--mu:#5a6b75;--ac:#0f7c8a;--ln:#c9d6dc;--st:#dff3e8;--sb:#3aa876;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0d1519;--tx:#e6eef0;--mu:#93a6ae;--ac:#5fc7d4;--ln:#29404a;--st:#12302a;--sb:#3aa876;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0d1519;--tx:#e6eef0;--mu:#93a6ae;--ac:#5fc7d4;--ln:#29404a;--st:#12302a;--sb:#3aa876;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.55 system-ui,-apple-system,"Noto Sans TC","PingFang TC",sans-serif}
+.w{max-width:680px;margin:0 auto;padding:20px 16px 48px}
+h1{font-size:26px;line-height:1.25;margin:0 0 4px}
+.sub{color:var(--mu);margin:0 0 14px;font-size:14px}
+.bar{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:8px}
+button{font:inherit;font-size:14px;color:var(--tx);background:transparent;border:1px solid var(--ln);border-radius:8px;padding:6px 12px;cursor:pointer}
+button[aria-pressed="true"]{background:var(--ac);border-color:var(--ac);color:var(--bg)}
+button:focus-visible,a:focus-visible{outline:2px solid var(--ac);outline-offset:2px}
+.day{margin-top:28px}
+.day h2{font-size:19px;margin:0 0 10px}
+.day h2 small{color:var(--ac);font-weight:600;margin-right:8px}
+.tl{border-left:2px solid var(--ln);margin-left:6px;padding-left:18px}
+.s{position:relative;padding:0 0 16px}
+.s::before{content:"";position:absolute;left:-25px;top:7px;width:10px;height:10px;border-radius:50%;background:var(--ac)}
+.t{font-weight:700;color:var(--ac);font-size:14px}
+.p{font-weight:600}
+.n{color:var(--mu);font-size:14px}
+.m{text-decoration:none;margin-left:6px;font-size:14px}
+.stay{background:var(--st);border-left:4px solid var(--sb);border-radius:8px;padding:10px 12px;font-size:15px}
+.stay a{color:var(--ac)}
+.ed [data-k]{outline:1px dashed var(--ln);outline-offset:2px;border-radius:3px}
+.foot{margin-top:32px;color:var(--mu);font-size:13px}
+</style></head><body><div class="w" id="app"></div>
+<script>
+var D=[
+{t:["抵達＋雷克雅維克","Arrive + Reykjavik"],a:["雷克雅維克","Reykjavik"],q:"Reykjavik",s:[
+["10:00","凱夫拉維克機場領車","Keflavik Airport car pickup","確認保險：沙石、強風、輪胎","Check insurance: gravel, wind, tires","Keflavik Airport"],
+["13:30","太陽航海者＋彩虹街＋哈爾格林姆教堂","Sun Voyager + Rainbow Street + Hallgrímskirkja","市區步行約 2 小時","About 2 hours on foot","Sun Voyager Reykjavik"],
+["15:30","Perlan 博物館","Perlan Museum","冰洞體驗、極光天象館、觀景台","Ice cave exhibit, aurora planetarium, viewing deck","Perlan Reykjavik"],
+["21:00","極光（選配）","Aurora hunt (optional)","晴天去 Grótta 燈塔，留意潮汐與強風","If clear, go to Grótta lighthouse; mind tide and wind","Grótta lighthouse"]]},
+{t:["黃金圈＋火山中心","Golden Circle + Lava Centre"],a:["Hella／Hvolsvöllur 一帶","Hella / Hvolsvöllur area"],q:"Hella Iceland",s:[
+["09:30","辛格韋德利國家公園","Þingvellir National Park","板塊裂谷，約 1.5 小時","Rift valley between two plates, about 1.5 h","Thingvellir National Park"],
+["12:00","蓋歐西間歇泉","Geysir (Strokkur)","約每 5–10 分鐘噴發","Erupts about every 5–10 minutes","Geysir Iceland"],
+["13:30","黃金瀑布","Gullfoss","步道可能結冰，注意防滑","Paths may be icy","Gullfoss"],
+["16:00","Lava Centre 火山中心","Lava Centre","火山與地震互動展，先查營業時間","Volcano and earthquake exhibits; check opening hours","Lava Centre Hvolsvollur"]]},
+{t:["南岸西段＋冰川","West South Coast + Glacier"],a:["Vik","Vik"],q:"Vik Iceland",s:[
+["09:00","塞里雅蘭瀑布","Seljalandsfoss","冬季濕滑，可能封閉","Slippery in winter, may be closed","Seljalandsfoss"],
+["10:30","斯科加瀑布＋Skógar 博物館","Skógafoss + Skógar Museum","博物館有傳統草皮屋","The museum has traditional turf houses","Skogafoss"],
+["12:30","索爾黑馬冰川健行","Sólheimajökull glacier hike","需跟團並提前預約，約 3 小時","Guided only, book ahead, about 3 h","Solheimajokull"],
+["16:00","維克紅教堂高處","Vík Church viewpoint","可看黑沙灘與雷尼斯岩","View of the black sand beach and sea stacks","Vik i Myrdal Church"],
+["21:00","極光（選配）","Aurora hunt (optional)","Vik 光害少","Little light pollution in Vik","Vik Iceland"]]},
+{t:["南岸東段，回雷克雅維克","East South Coast, back to Reykjavik"],a:["雷克雅維克","Reykjavik"],q:"Reykjavik",s:[
+["09:00","Dyrhólaey 燈塔","Dyrhólaey lighthouse","視路況，結冰或強風可能封閉","Depends on the road; may close in ice or high wind","Dyrholaey"],
+["10:30","黑沙灘＋Hálsanefshellir 玄武岩洞","Reynisfjara + Hálsanefshellir cave","洞只能退潮時靠近；絕對不要背對海","Cave reachable only at low tide; never turn your back to the sea","Reynisfjara"],
+["12:00","午餐（Vik）","Lunch in Vik","","","Vik Iceland"],
+["12:45","羽毛峽谷（選配）","Fjaðrárgljúfur canyon (optional)","Vik 以東約 1 小時，選這個就少排一個景點","About 1 h east of Vik; choose it and drop another stop","Fjadrargljufur"],
+["14:30","開回雷克雅維克","Drive back to Reykjavik","約 2.5–3 小時","About 2.5–3 h","Reykjavik"],
+["19:00","晚餐＋伴手禮","Dinner + souvenirs","可報名極光團","Optional aurora tour","Laugavegur Reykjavik"]]},
+{t:["返程日","Departure day"],a:["（無）","(none)"],q:"",s:[
+["09:00","Flyover Iceland 或 Reykjanes 半島","Flyover Iceland or Reykjanes Peninsula","Reykjanes：Gunnuhver 地熱區、大陸交界橋；也可改 Raufarhólshellir 熔岩洞（需預約）","Reykjanes: Gunnuhver geothermal area, Bridge Between Continents; or the Raufarhólshellir lava tunnel (book ahead)","Reykjanes Peninsula"],
+["12:00","還車","Return the car","","","Keflavik Airport"],
+["—","抵達機場","Arrive at the airport","至少起飛前 3 小時","At least 3 h before your flight","Keflavik Airport"]]}];
+var U={zh:{h:"冰島 5 天自駕行程",sub:"雷克雅維克、黃金圈、南岸｜不泡溫泉版",ed:"編輯",done:"完成",rs:"還原",day:"第 {n} 天",stay:"住宿：",find:"找 Airbnb",bk:"找 Booking",map:"地圖",foot:"編輯只會存在你自己的瀏覽器，不會同步給其他人。要改共用版本，請告訴整理的人。景點營業時間、潮汐與路況，出發前請再確認。"},
+en:{h:"Iceland 5-Day Road Trip",sub:"Reykjavik, Golden Circle, South Coast | No hot springs version",ed:"Edit",done:"Done",rs:"Reset",day:"Day {n}",stay:"Stay: ",find:"Find Airbnb",bk:"Find on Booking.com",map:"Map",foot:"Edits are saved only in your own browser and are not shared. To change the shared version, ask whoever made this page. Please recheck opening hours, tides and road conditions before you go."}};
+var lang=(navigator.language||"").slice(0,2)=="en"?"en":"zh",edit=false,S={};
+try{S=JSON.parse(localStorage.getItem("ice5")||"{}")}catch(e){}
+function esc(x){return String(x).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;")}
+function g(k,d){return esc(S[lang]&&S[lang][k]!=null?S[lang][k]:d)}
+function sp(k,d,c){return '<span class="'+c+'" data-k="'+k+'"'+(edit?' contenteditable="true"':'')+'>'+g(k,d)+'</span>'}
+function mp(q){return '<a class="m" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(q)+'">📍 '+U[lang].map+'</a>'}
+function render(){var i=lang=="en"?1:0,u=U[lang],h='';
+document.documentElement.lang=lang=="en"?"en":"zh-Hant";
+document.body.className=edit?"ed":"";
+h+='<h1>'+u.h+'</h1><p class="sub">'+u.sub+'</p><div class="bar"><button data-a="zh" aria-pressed="'+(lang=="zh")+'">中文</button><button data-a="en" aria-pressed="'+(lang=="en")+'">English</button><button data-a="ed" aria-pressed="'+edit+'">'+(edit?u.done:u.ed)+'</button>'+(edit?'<button data-a="rs">'+u.rs+'</button>':'')+'</div>';
+D.forEach(function(d,x){h+='<section class="day"><h2><small>'+u.day.replace("{n}",x+1)+'</small>'+sp("d"+x+"t",d.t[i],"")+'</h2><div class="tl">';
+d.s.forEach(function(s,y){var k="d"+x+"s"+y;h+='<div class="s"><div class="t">'+sp(k+"h",s[0],"")+'</div><div><span class="p" data-k="'+k+'p"'+(edit?' contenteditable="true"':'')+'>'+g(k+"p",s[1+i])+'</span>'+mp(s[5])+'</div>'+(s[3+i]||S[lang]&&S[lang][k+"n"]?'<div>'+sp(k+"n",s[3+i],"n")+'</div>':'')+'</div>'});
+h+='</div><div class="stay">'+u.stay+sp("d"+x+"a",d.a[i],"")+(d.q?' · <a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(d.q)+'">📍 '+U[lang].map+'</a> · <a target="_blank" rel="noopener" href="https://www.airbnb.com/s/'+encodeURIComponent(d.q)+'/homes">'+u.find+'</a> · <a target="_blank" rel="noopener" href="https://www.booking.com/searchresults.html?ss='+encodeURIComponent(d.q)+'">'+u.bk+'</a>':'')+'</div></section>'});
+h+='<p class="foot">'+u.foot+'</p>';document.getElementById("app").innerHTML=h}
+document.addEventListener("click",function(e){var a=e.target.getAttribute&&e.target.getAttribute("data-a");if(!a)return;
+if(a=="zh"||a=="en")lang=a;else if(a=="ed")edit=!edit;else if(a=="rs"){S[lang]={};try{localStorage.setItem("ice5",JSON.stringify(S))}catch(x){}}
+render()});
+document.addEventListener("focusout",function(e){var k=e.target.getAttribute&&e.target.getAttribute("data-k");if(!k||!edit)return;
+S[lang]=S[lang]||{};S[lang][k]=e.target.textContent.trim();try{localStorage.setItem("ice5",JSON.stringify(S))}catch(x){}});
+render();
+</script></body></html>
